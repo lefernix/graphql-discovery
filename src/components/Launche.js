@@ -29,7 +29,9 @@ const LaunchesNasa = () => {
           <li>Date UTC : {launche.launch_date_utc}</li>
           <li>Resultat : {launche.launch_success ? "succès" : "raté"}</li>
           <li>Nom : {launche.rocket.rocket_name}</li>
-          <li>Vidéo : {launche.links.video_link}</li>
+          <li>
+            Vidéo : <a href={launche.links.video_link}>Cliquez-ici</a>
+          </li>
           <li>Détails : {launche.details}</li>
         </ul>
       </div>
